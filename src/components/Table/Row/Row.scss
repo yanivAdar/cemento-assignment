@@ -1,0 +1,33 @@
+@import "../../../variables.scss";
+@import "../../../mixin.scss";
+
+.single-row {
+  flex: 0 0 100%;
+  display: flex;
+
+  &:hover {
+    .row-cell {
+      background-color: $table-hover-color;
+    }
+  }
+
+  .row-cell {
+    background-color: $table-color;
+    flex: 1 1 150px;
+    margin: 2px;
+    padding: 6px;
+    transition: background-color 0.3s ease;
+    transition: flex-basis 0.3s ease;
+    overflow: hidden;
+    text-wrap: nowrap;
+    
+    &.delete {
+      flex: 0 0 70px;
+      cursor: pointer;
+    }
+
+    &:first-child {
+      flex: 0 0 70px !important;
+    }
+  }
+}

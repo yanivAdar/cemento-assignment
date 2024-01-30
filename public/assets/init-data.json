@@ -1,0 +1,89 @@
+{
+  "columns": [
+    {
+      "id": "id",
+      "ordinalNo": 1,
+      "title": "ID",
+      "type": "string",
+      "width": 10
+    },
+    {
+      "id": "name",
+      "ordinalNo": 2,
+      "title": "Name",
+      "type": "string",
+      "width": 25
+    },
+    {
+      "id": "age",
+      "ordinalNo": 3,
+      "title": "Age",
+      "type": "number",
+      "width": 25
+    },
+    {
+      "id": "city",
+      "ordinalNo": 4,
+      "title": "City",
+      "type": "string",
+      "width": 25
+    },
+    {
+      "id": "available",
+      "ordinalNo": 5,
+      "title": "Available",
+      "type": "boolean",
+      "width": 25
+    },
+    {
+      "id": "color",
+      "ordinalNo": 6,
+      "title": "Color",
+      "type": "string",
+      "width": 25
+    }
+  ],
+
+  "rows": [
+    {
+      "id": "row1",
+      "name": "Person 1",
+      "age": 28,
+      "city": "New York",
+      "available": true,
+      "color": "blue"
+    },
+    {
+      "id": "row2",
+      "name": "Person 2",
+      "age": 23,
+      "city": "Tokyo",
+      "available": false,
+      "color": "yellow"
+    },
+    {
+      "id": "row3",
+      "name": "Person 3",
+      "age": 25,
+      "city": "London",
+      "available": false,
+      "color": "white"
+    },
+    {
+      "id": "row4",
+      "name": "Person 4",
+      "age": 30,
+      "city": "Paris",
+      "available": true,
+      "color": "black"
+    },
+    {
+      "id": "row5",
+      "name": "Person 5",
+      "age": 22,
+      "city": "Berlin",
+      "available": true,
+      "color": "red"
+    }
+  ]
+}

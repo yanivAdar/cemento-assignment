@@ -1,0 +1,42 @@
+@import "../../../variables.scss";
+@import "../../../mixin.scss";
+
+.single-column {
+  position: relative;
+  background-color: $table-color;
+  padding: 10px 6px;
+  border-radius: 15px 15px 0 0;
+  margin: 2px;
+  overflow: hidden;
+  text-wrap: nowrap;
+  cursor: pointer;
+  transition: flex-basis 0.3s ease;
+
+  &.collaps {
+    flex: 0 0 10px !important;
+    color: transparent;
+    &:not(:first-child):not(:last-child)::before {
+      transform: rotate(90deg);
+    }
+  }
+
+  &:not(:first-child):not(:last-child)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 1px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid $border-color;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transition: transform 0.3s ease;
+    transform: rotate(0deg);
+  }
+
+  &:first-child,
+  &:last-child {
+    flex: 0 0 70px !important;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../variables.scss';
+@import '../../../mixin.scss';
+
+.small-popup {
+    display: none;
+    position: absolute;
+    &.open {
+        display: block;
+    }
+    input {
+        padding: 0 6px;
+        @include gen-input;
+    }
+    &:before {
+        content: '';
+        display: block;
+        margin-left: 12px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid $border-color;
+        width: 0px;
+        height: 0px;
+
+    }
+  }

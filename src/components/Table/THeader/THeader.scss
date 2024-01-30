@@ -1,0 +1,28 @@
+@import "../../../variables.scss";
+@import "../../../mixin.scss";
+
+.header-con {
+  width: 100%;
+
+  .btn-con {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+
+    .search {
+      @include gen-input;
+      padding: 0 28px 0 6px;
+    }
+
+    .input-icon {
+      position: absolute;
+      right: 8px;
+      top: 6px;
+    }
+  }
+}
+
+button {
+    @include gen-btn;
+  }

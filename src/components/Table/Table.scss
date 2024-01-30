@@ -1,0 +1,27 @@
+@import '../../variables.scss';
+
+.table-con {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: 6px;
+
+    .all-columns{
+        flex: 0 0 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        .delete {
+            flex: 0 0 70px;
+        }
+    }
+
+    .all-rows{
+        flex: 0 0 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
